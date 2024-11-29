@@ -8,7 +8,7 @@ public class LoadSaves : MonoBehaviour
 
     public void Awake()
     {
-        isMobileBuild = false;
+        isMobileBuild = true;
     }
 
     private void Start()

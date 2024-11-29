@@ -8,7 +8,7 @@ public class SteamWorksAchievement : MonoBehaviour
     {
         try
         {
-            Steamworks.SteamClient.Init(2153770);
+            // Steamworks.SteamClient.Init(2153770);
         }
         catch (System.Exception e)
         {
@@ -19,10 +19,10 @@ public class SteamWorksAchievement : MonoBehaviour
 
     void Update()
     {
-       Steamworks.SteamClient.RunCallbacks();
+        // Steamworks.SteamClient.RunCallbacks();
     }
     void OnApplicationQuit()
     {
-       Steamworks.SteamClient.Shutdown();
+        //  Steamworks.SteamClient.Shutdown();
     }
 }

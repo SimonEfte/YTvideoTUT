@@ -55,7 +55,7 @@ public class AchievementsUpdate : MonoBehaviour
     public static int ACH11IsUnlocked;
     public static int ACH12IsUnlocked;
     public static int ACH13IsUnlocked;
-    public  static int ACH14IsUnlocked;
+    public static int ACH14IsUnlocked;
     public static int ACH15IsUnlocked;
     public static int ACH16IsUnlocked;
     public static int ACH17IsUnlocked;
@@ -165,15 +165,15 @@ public class AchievementsUpdate : MonoBehaviour
 
     public void CheckACHUnlocked(string achName)
     {
-        var ach = new Steamworks.Data.Achievement(achName);
+        // var ach = new Steamworks.Data.Achievement(achName);
 
-        if (ach.State == false)
-        {
-            ach.Trigger();
-        }
+        // if (ach.State == false)
+        // {
+        // ach.Trigger();
+        // }
     }
 
-
+    /*
     public void UnlockAchievement1(string ID)
     {
         if (GlobalCoins.CoinCount >= 1000000000000000000000000f)
@@ -598,7 +598,7 @@ public class AchievementsUpdate : MonoBehaviour
 
         }
     }
-   
+   */
 
     public void Update()
     {

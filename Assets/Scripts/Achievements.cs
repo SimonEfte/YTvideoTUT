@@ -149,71 +149,81 @@ public class Achievements : MonoBehaviour
     IEnumerator SetAch()
     {
         yield return new WaitForSeconds(1f);
-        if (ACH1IsUnlocked == 1) { coin1.SetActive(true); }
-        if (ACH2IsUnlocked == 1) { coin10.SetActive(true); }
-        if (ACH3IsUnlocked == 1) { coin100.SetActive(true); }
-        if (ACH4IsUnlocked == 1) { coin1000.SetActive(true); }
-        if (ACH5IsUnlocked == 1) { coin10000.SetActive(true); }
-        if (ACH6IsUnlocked == 1) { coin100000.SetActive(true); }
-        if (ACH7IsUnlocked == 1) { coin1000000.SetActive(true); }
-        if (ACH8IsUnlocked == 1) { coin1000000000.SetActive(true); }
-        if (ACH9IsUnlocked == 1) { coinTrillion.SetActive(true); }
-        if (ACH10IsUnlocked == 1) { coinQuadrillion.SetActive(true); }
-        if (ACH11IsUnlocked == 1) { coinQuntillion.SetActive(true); }
-        if (ACH12IsUnlocked == 1) { coinSextillion.SetActive(true); }
-        if (ACH13IsUnlocked == 1) { flip100.SetActive(true); }
-        if (ACH14IsUnlocked == 1) { flip1000.SetActive(true); }
-        if (ACH15IsUnlocked == 1) { flip10000.SetActive(true); }
-        if (ACH16IsUnlocked == 1) { flip100000.SetActive(true); }
-        if (ACH17IsUnlocked == 1) { specialFlipper1.SetActive(true); }
-        if (ACH18IsUnlocked == 1) { specialFlipper5.SetActive(true); }
-        if (ACH19IsUnlocked == 1) { specialFlipper10.SetActive(true); }
-        if (ACH20IsUnlocked == 1) { specialFlipper21.SetActive(true); }
-        if (ACH21IsUnlocked == 1) { lucky2point5percent.SetActive(true); }
-        if (ACH22IsUnlocked == 1) { lucky5percent.SetActive(true); }
-        if (ACH23IsUnlocked == 1) { percent75.SetActive(true); }
-        if (ACH24IsUnlocked == 1) { percent93point75.SetActive(true); }
-        if (ACH25IsUnlocked == 1) { percent93point75.SetActive(true); }
-        if (ACH26IsUnlocked == 1) { arm1.SetActive(true); }
-        if (ACH27IsUnlocked == 1) { arm10.SetActive(true); }
-        if (ACH28IsUnlocked == 1) { greaterCoing1.SetActive(true); }
-        if (ACH29IsUnlocked == 1) { greaterCoin10.SetActive(true); }
-        if (ACH30IsUnlocked == 1) { knowledge1.SetActive(true); }
-        if (ACH31IsUnlocked == 1) { knowledge10.SetActive(true); }
-        if (ACH32IsUnlocked == 1) { fist1.SetActive(true); }
-        if (ACH33IsUnlocked == 1) { fist10.SetActive(true); }
-        if (ACH34IsUnlocked == 1) { needle1.SetActive(true); }
-        if (ACH35IsUnlocked == 1) { needle10.SetActive(true); }
-        if (ACH36IsUnlocked == 1) { brain1.SetActive(true); }
-        if (ACH37IsUnlocked == 1) { brain10.SetActive(true); }
-        if (ACH38IsUnlocked == 1) { explosion1.SetActive(true); }
-        if (ACH39IsUnlocked == 1) { explosion10.SetActive(true); }
-        if (ACH40IsUnlocked == 1) { hydration1.SetActive(true); }
-        if (ACH41IsUnlocked == 1) { hydration10.SetActive(true); }
-        if (ACH42IsUnlocked == 1) { potion1.SetActive(true); }
-        if (ACH43IsUnlocked == 1) { potion10.SetActive(true); }
-        if (ACH44IsUnlocked == 1) { masterFlipper1.SetActive(true); }
-        if (ACH45IsUnlocked == 1) { masterFlipper10.SetActive(true); }
-        if (ACH46IsUnlocked == 1) { handShake1.SetActive(true); }
-        if (ACH47IsUnlocked == 1) { handShake10.SetActive(true); }
-        if (ACH48IsUnlocked == 1) { highFive1.SetActive(true); }
-        if (ACH49IsUnlocked == 1) { highFive10.SetActive(true); }
-        if (ACH50IsUnlocked == 1) { lucky1.SetActive(true); }
-        if (ACH51IsUnlocked == 1) { lucky10.SetActive(true); }
-        if (ACH52IsUnlocked == 1) { lucky100.SetActive(true); }
-        if (ACH53IsUnlocked == 1) { flipper2.SetActive(true); }
-        if (ACH54IsUnlocked == 1) { flipper5.SetActive(true); }
-        if (ACH55IsUnlocked == 1) { percent75.SetActive(true); }
-        if (ACH56IsUnlocked == 1) { flipper10.SetActive(true); }
-        if (ACH57IsUnlocked == 1) { flipper21.SetActive(true); }
-        if (ACH58IsUnlocked == 1) { flip1Million.SetActive(true); }
-        if (ACH59IsUnlocked == 1) { heads100KTimes.SetActive(true); }
-        if (ACH60IsUnlocked == 1) { tails100KTimes.SetActive(true); }
-        if (ACH61IsUnlocked == 1) { theyAllFlip.SetActive(true); }
-        if (ACH62IsUnlocked == 1) { lucky1000.SetActive(true); }
+        if (ACH1IsUnlocked == 1) { coin1.SetActive(true); CheckACHUnlocked("OneCoin_AC_Test"); }
+        if (ACH2IsUnlocked == 1) { coin10.SetActive(true); CheckACHUnlocked("10Coin_AC_Test"); }
+        if (ACH3IsUnlocked == 1) { coin100.SetActive(true); CheckACHUnlocked("100Coin_AC_Test"); }
+        if (ACH4IsUnlocked == 1) { coin1000.SetActive(true); CheckACHUnlocked("1000Coin_AC_Test"); }
+        if (ACH5IsUnlocked == 1) { coin10000.SetActive(true); CheckACHUnlocked("10000Coin_AC_Test"); }
+        if (ACH6IsUnlocked == 1) { coin100000.SetActive(true); CheckACHUnlocked("HundredThousand_Coin_AC_Test"); }
+        if (ACH7IsUnlocked == 1) { coin1000000.SetActive(true); CheckACHUnlocked("MillionCoins_AC_Test"); }
+        if (ACH8IsUnlocked == 1) { coin1000000000.SetActive(true); CheckACHUnlocked("BillionCoins_AC_Test"); }
+        if (ACH9IsUnlocked == 1) { coinTrillion.SetActive(true); CheckACHUnlocked("TillionCoins_AC_Test"); }
+        if (ACH10IsUnlocked == 1) { coinQuadrillion.SetActive(true); CheckACHUnlocked("Quadrillion_AC_Test"); }
+        if (ACH11IsUnlocked == 1) { coinQuntillion.SetActive(true); CheckACHUnlocked("Quintillion_AC_Test"); }
+        if (ACH12IsUnlocked == 1) { coinSextillion.SetActive(true); CheckACHUnlocked("Sextillion_Ac_Test"); }
+        if (ACH13IsUnlocked == 1) { flip100.SetActive(true); CheckACHUnlocked("100Flip_AC_Test"); }
+        if (ACH14IsUnlocked == 1) { flip1000.SetActive(true); CheckACHUnlocked("1000Flip_AC_Test"); }
+        if (ACH15IsUnlocked == 1) { flip10000.SetActive(true); CheckACHUnlocked("10000Flip_AC_Test"); }
+        if (ACH16IsUnlocked == 1) { flip100000.SetActive(true); CheckACHUnlocked("100000Flip_AC_Test"); }
+        if (ACH17IsUnlocked == 1) { specialFlipper1.SetActive(true); CheckACHUnlocked("1UpgradedFlipper_AC_Test"); }
+        if (ACH18IsUnlocked == 1) { specialFlipper5.SetActive(true); CheckACHUnlocked("5UpgradedFlipper_AC_Test"); }
+        if (ACH19IsUnlocked == 1) { specialFlipper10.SetActive(true); CheckACHUnlocked("10UpgradedFlipper_AC_Test"); }
+        if (ACH20IsUnlocked == 1) { specialFlipper21.SetActive(true); CheckACHUnlocked("21UpgradedFlipper_AC_Test"); }
+        if (ACH21IsUnlocked == 1) { lucky2point5percent.SetActive(true); CheckACHUnlocked("2.5_AC_Test"); }
+        if (ACH22IsUnlocked == 1) { lucky5percent.SetActive(true); CheckACHUnlocked("5_AC_Test"); }
+        if (ACH23IsUnlocked == 1) { percent75.SetActive(true); CheckACHUnlocked("75_AC_Test"); }
+        if (ACH24IsUnlocked == 1) { percent93point75.SetActive(true); CheckACHUnlocked("93.75_AC_Test"); }
+        if (ACH25IsUnlocked == 1) { percent93point75.SetActive(true); CheckACHUnlocked("93.75_AC_Test"); }
+        if (ACH26IsUnlocked == 1) { arm1.SetActive(true); CheckACHUnlocked("StrongerArms_AC_Test"); }
+        if (ACH27IsUnlocked == 1) { arm10.SetActive(true); CheckACHUnlocked("10StrongerAms_AC_Test"); }
+        if (ACH28IsUnlocked == 1) { greaterCoing1.SetActive(true); CheckACHUnlocked("GreaterCoin_AC_test"); }
+        if (ACH29IsUnlocked == 1) { greaterCoin10.SetActive(true); CheckACHUnlocked("10GreaterCoin_AC_Test"); }
+        if (ACH30IsUnlocked == 1) { knowledge1.SetActive(true); CheckACHUnlocked("Knowledge_AC_Test"); }
+        if (ACH31IsUnlocked == 1) { knowledge10.SetActive(true); CheckACHUnlocked("10Knowledge_AC_Test"); }
+        if (ACH32IsUnlocked == 1) { fist1.SetActive(true); CheckACHUnlocked("StrongerFist_AC_Test"); }
+        if (ACH33IsUnlocked == 1) { fist10.SetActive(true); CheckACHUnlocked("10StrongerFist_Ac_Test"); }
+        if (ACH34IsUnlocked == 1) { needle1.SetActive(true); CheckACHUnlocked("HandInjection_AC_Test"); }
+        if (ACH35IsUnlocked == 1) { needle10.SetActive(true); CheckACHUnlocked("10HandInjection_AC_Test"); }
+        if (ACH36IsUnlocked == 1) { brain1.SetActive(true); CheckACHUnlocked("BrainPower_AC_Test"); }
+        if (ACH37IsUnlocked == 1) { brain10.SetActive(true); CheckACHUnlocked("10BrainPowe_AC_Test"); }
+        if (ACH38IsUnlocked == 1) { explosion1.SetActive(true); CheckACHUnlocked("ExplosiveFlips_AC_test"); }
+        if (ACH39IsUnlocked == 1) { explosion10.SetActive(true); CheckACHUnlocked("10ExplosiveFlips_AC_Test"); }
+        if (ACH40IsUnlocked == 1) { hydration1.SetActive(true); CheckACHUnlocked("Hydration_AC_Test"); }
+        if (ACH41IsUnlocked == 1) { hydration10.SetActive(true); CheckACHUnlocked("Hydration10_AC_Test"); }
+        if (ACH42IsUnlocked == 1) { potion1.SetActive(true); CheckACHUnlocked("StrangePotion_AC_test"); }
+        if (ACH43IsUnlocked == 1) { potion10.SetActive(true); CheckACHUnlocked("10StrangePotion_Ac_Test"); }
+        if (ACH44IsUnlocked == 1) { masterFlipper1.SetActive(true); CheckACHUnlocked("MasterFLipper_AC_Test"); }
+        if (ACH45IsUnlocked == 1) { masterFlipper10.SetActive(true); CheckACHUnlocked("10MasterFlipper_Ac_test"); }
+        if (ACH46IsUnlocked == 1) { handShake1.SetActive(true); CheckACHUnlocked("HandShake_AC_Test"); }
+        if (ACH47IsUnlocked == 1) { handShake10.SetActive(true); CheckACHUnlocked("10HandShake_Ac_Test"); }
+        if (ACH48IsUnlocked == 1) { highFive1.SetActive(true); CheckACHUnlocked("HighFive_AC_Test"); }
+        if (ACH49IsUnlocked == 1) { highFive10.SetActive(true); CheckACHUnlocked("10HighFive_AC_Test"); }
+        if (ACH50IsUnlocked == 1) { lucky1.SetActive(true); CheckACHUnlocked("1Lucky_AC_Test"); }
+        if (ACH51IsUnlocked == 1) { lucky10.SetActive(true); CheckACHUnlocked("10Lucky_AC_Test"); }
+        if (ACH52IsUnlocked == 1) { lucky100.SetActive(true); CheckACHUnlocked("100Lucky_AC_Test"); }
+        if (ACH53IsUnlocked == 1) { flipper2.SetActive(true); CheckACHUnlocked("2CoinFlipper_AC_Test"); }
+        if (ACH54IsUnlocked == 1) { flipper5.SetActive(true); CheckACHUnlocked("5CoinFlippers_AC_Test"); }
+        if (ACH55IsUnlocked == 1) { percent75.SetActive(true); CheckACHUnlocked("75_AC_Test"); }
+        if (ACH56IsUnlocked == 1) { flipper10.SetActive(true); CheckACHUnlocked("10CoinFlippers_AC_Test"); }
+        if (ACH57IsUnlocked == 1) { flipper21.SetActive(true); CheckACHUnlocked("21CoinFlippers_AC_Test"); }
+        if (ACH58IsUnlocked == 1) { flip1Million.SetActive(true); CheckACHUnlocked("1millionFlips"); }
+        if (ACH59IsUnlocked == 1) { heads100KTimes.SetActive(true); CheckACHUnlocked("100KHeads"); }
+        if (ACH60IsUnlocked == 1) { tails100KTimes.SetActive(true); CheckACHUnlocked("100KTails"); }
+        if (ACH61IsUnlocked == 1) { theyAllFlip.SetActive(true); CheckACHUnlocked("21AutoFlips"); }
+        if (ACH62IsUnlocked == 1) { lucky1000.SetActive(true); CheckACHUnlocked("getLucky1K"); }
     }
 
-    /*
+    public void CheckACHUnlocked(string achName)
+    {
+        var ach = new Steamworks.Data.Achievement(achName);
+
+        if (ach.State == false)
+        {
+            ach.Trigger();
+        }
+    }
+
+    
     public void UnlockAchievement1(string OneCoin_AC_Test)
     {
         if(GlobalCoins.CoinCount >= 1)
@@ -899,7 +909,7 @@ public class Achievements : MonoBehaviour
             }
         }
     }
-    */
+    
 
     public static int ACH1IsUnlocked = 0;
     public static int ACH2IsUnlocked = 0;

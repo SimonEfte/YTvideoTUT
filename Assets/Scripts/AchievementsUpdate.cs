@@ -127,43 +127,53 @@ public class AchievementsUpdate : MonoBehaviour
     IEnumerator SetAch()
     {
         yield return new WaitForSeconds(1f);
-        if (ACH1IsUnlocked == 1) { SeptillionCoins.SetActive(true); }
-        if (ACH2IsUnlocked == 1) { AscensionUpgrades5.SetActive(true); }
-        if (ACH3IsUnlocked == 1) { AscensionUpgrades10.SetActive(true); }
-        if (ACH4IsUnlocked == 1) { AscensionUpgrades20.SetActive(true); }
-        if (ACH5IsUnlocked == 1) { AscensionUpgrades30.SetActive(true); }
-        if (ACH6IsUnlocked == 1) { AscensionUpgradesALL.SetActive(true); }
-        if (ACH7IsUnlocked == 1) { AscensionCoins25.SetActive(true); }
-        if (ACH8IsUnlocked == 1) { AscensionCoins50.SetActive(true); }
-        if (ACH9IsUnlocked == 1) { AscensionCoins75.SetActive(true); }
-        if (ACH10IsUnlocked == 1) { AscendOnce.SetActive(true); }
-        if (ACH11IsUnlocked == 1) { Ascend5Times.SetActive(true); }
-        if (ACH12IsUnlocked == 1) { gamble10Times.SetActive(true); }
-        if (ACH13IsUnlocked == 1) { gamble5Won.SetActive(true); }
-        if (ACH14IsUnlocked == 1) { Magic1.SetActive(true); }
-        if (ACH15IsUnlocked == 1) { Magic10.SetActive(true); }
-        if (ACH16IsUnlocked == 1) { pile10.SetActive(true); }
-        if (ACH17IsUnlocked == 1) { pile100.SetActive(true); }
-        if (ACH18IsUnlocked == 1) { hiddenBronze.SetActive(true); }
-        if (ACH19IsUnlocked == 1) { hiddenSilver.SetActive(true); }
-        if (ACH20IsUnlocked == 1) { gamble5Lose.SetActive(true); }
+        if (ACH1IsUnlocked == 1) { SeptillionCoins.SetActive(true); CheckACHUnlocked("1Septillion"); }
+        if (ACH2IsUnlocked == 1) { AscensionUpgrades5.SetActive(true); CheckACHUnlocked("5InflationUpgrades"); }
+        if (ACH3IsUnlocked == 1) { AscensionUpgrades10.SetActive(true); CheckACHUnlocked("10InflationUpgrades"); }
+        if (ACH4IsUnlocked == 1) { AscensionUpgrades20.SetActive(true); CheckACHUnlocked("29InflationUpgrades"); }
+        if (ACH5IsUnlocked == 1) { AscensionUpgrades30.SetActive(true); CheckACHUnlocked("30InflationUpgrades"); }
+        if (ACH6IsUnlocked == 1) { AscensionUpgradesALL.SetActive(true); CheckACHUnlocked("AllInfaltion"); }
+        if (ACH7IsUnlocked == 1) { AscensionCoins25.SetActive(true); CheckACHUnlocked("25InfaltionCoins"); }
+        if (ACH8IsUnlocked == 1) { AscensionCoins50.SetActive(true); CheckACHUnlocked("50InfaltionCoins"); }
+        if (ACH9IsUnlocked == 1) { AscensionCoins75.SetActive(true); CheckACHUnlocked("75InfaltionCoins"); }
+        if (ACH10IsUnlocked == 1) { AscendOnce.SetActive(true); CheckACHUnlocked("inflate1"); }
+        if (ACH11IsUnlocked == 1) { Ascend5Times.SetActive(true); CheckACHUnlocked("inflate5"); }
+        if (ACH12IsUnlocked == 1) { gamble10Times.SetActive(true); CheckACHUnlocked("gamble10"); }
+        if (ACH13IsUnlocked == 1) { gamble5Won.SetActive(true); CheckACHUnlocked("gamblewon"); }
+        if (ACH14IsUnlocked == 1) { Magic1.SetActive(true); CheckACHUnlocked("Magic1"); }
+        if (ACH15IsUnlocked == 1) { Magic10.SetActive(true); CheckACHUnlocked("Mafic10"); }
+        if (ACH16IsUnlocked == 1) { pile10.SetActive(true); CheckACHUnlocked("pile10"); }
+        if (ACH17IsUnlocked == 1) { pile100.SetActive(true); CheckACHUnlocked("pile100"); }
+        if (ACH18IsUnlocked == 1) { hiddenBronze.SetActive(true); CheckACHUnlocked("HiddenBronce"); }
+        if (ACH19IsUnlocked == 1) { hiddenSilver.SetActive(true); CheckACHUnlocked("HiddenSilver"); }
+        if (ACH20IsUnlocked == 1) { gamble5Lose.SetActive(true); CheckACHUnlocked("gamblelost"); }
 
-        if (ACH21IsUnlocked == 1) { challenge1.SetActive(true); }
-        if (ACH22IsUnlocked == 1) { challenge2.SetActive(true); }
-        if (ACH23IsUnlocked == 1) { challenge3.SetActive(true); }
-        if (ACH24IsUnlocked == 1) { challenge4.SetActive(true); }
-        if (ACH25IsUnlocked == 1) { activeFlips100.SetActive(true);  }
-        if (ACH26IsUnlocked == 1) { activeFlips1000.SetActive(true); }
-        if (ACH27IsUnlocked == 1) { activeFlips5000.SetActive(true); }
-        if (ACH28IsUnlocked == 1) { chest1.SetActive(true); }
-        if (ACH29IsUnlocked == 1) { chest10.SetActive(true); }
-        if (ACH30IsUnlocked == 1) { ritual1.SetActive(true); }
-        if (ACH31IsUnlocked == 1) { ritual10.SetActive(true); }
-        if (ACH32IsUnlocked == 1) { autoUpgrade.SetActive(true); }
-        if (ACH33IsUnlocked == 1) { octillion1.SetActive(true); }
+        if (ACH21IsUnlocked == 1) { challenge1.SetActive(true); CheckACHUnlocked("challenge1"); }
+        if (ACH22IsUnlocked == 1) { challenge2.SetActive(true); CheckACHUnlocked("challenge2"); }
+        if (ACH23IsUnlocked == 1) { challenge3.SetActive(true); CheckACHUnlocked("challenge3"); }
+        if (ACH24IsUnlocked == 1) { challenge4.SetActive(true); CheckACHUnlocked("challenge4"); }
+        if (ACH25IsUnlocked == 1) { activeFlips100.SetActive(true); CheckACHUnlocked("100Active"); }
+        if (ACH26IsUnlocked == 1) { activeFlips1000.SetActive(true); CheckACHUnlocked("1000Active"); }
+        if (ACH27IsUnlocked == 1) { activeFlips5000.SetActive(true); CheckACHUnlocked("5000Active"); }
+        if (ACH28IsUnlocked == 1) { chest1.SetActive(true); CheckACHUnlocked("1chest"); }
+        if (ACH29IsUnlocked == 1) { chest10.SetActive(true); CheckACHUnlocked("10chest"); }
+        if (ACH30IsUnlocked == 1) { ritual1.SetActive(true); CheckACHUnlocked("1ritual"); }
+        if (ACH31IsUnlocked == 1) { ritual10.SetActive(true); CheckACHUnlocked("10ritual"); }
+        if (ACH32IsUnlocked == 1) { autoUpgrade.SetActive(true); CheckACHUnlocked("auto"); }
+        if (ACH33IsUnlocked == 1) { octillion1.SetActive(true); CheckACHUnlocked("1oct"); }
     }
 
-    /*
+    public void CheckACHUnlocked(string achName)
+    {
+        var ach = new Steamworks.Data.Achievement(achName);
+
+        if (ach.State == false)
+        {
+            ach.Trigger();
+        }
+    }
+
+
     public void UnlockAchievement1(string ID)
     {
         if (GlobalCoins.CoinCount >= 1000000000000000000000000f)
@@ -588,7 +598,7 @@ public class AchievementsUpdate : MonoBehaviour
 
         }
     }
-   */
+   
 
     public void Update()
     {
@@ -650,7 +660,6 @@ public class AchievementsUpdate : MonoBehaviour
 
         if (AscendScreen.ascendUpgradeAmount >= 44)
         {
-
             if (ACH6IsUnlocked == 0)
             {
                 if (LoadSaves.isMobileBuild == false) { button.GetComponent<Button>().onClick.Invoke(); }

@@ -30,4 +30,9 @@ public class SocialsLinks : MonoBehaviour
         Application.OpenURL("https://play.google.com/store/apps/details?id=com.eagleeyegames.coinflipper");
     }
 
+    public void OpenAppStore()
+    {
+        Application.OpenURL("https://apps.apple.com/us/app/coin-flipper-idle-game/id6738841143?platform=iphone");
+    }
+
 }

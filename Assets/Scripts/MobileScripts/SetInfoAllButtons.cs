@@ -8,6 +8,7 @@ public class SetInfoAllButtons : MonoBehaviour
 
     public GameObject specialInfo1, specialInfo2, specialInfo3, specialInfo4, specialInfo5, specialInfo6, specialInfo7, specialInfo8, specialInfo9;
     public GameObject exitGameBTN, aviableOnPlayBtn, languagesBtn, resBtn;
+    public GameObject appStoreBtn, outOnMobileText;
 
     public GameObject setting1, setting2, sound;
 
@@ -30,6 +31,8 @@ public class SetInfoAllButtons : MonoBehaviour
 
             exitGameBTN.SetActive(false);
             aviableOnPlayBtn.SetActive(false);
+            appStoreBtn.SetActive(false);
+            outOnMobileText.SetActive(false);
             languagesBtn.SetActive(false);
             resBtn.SetActive(false);
 
@@ -159,4 +162,6 @@ public class SetInfoAllButtons : MonoBehaviour
     {
         inflationExpl.SetActive(false);
     }
+
+
 }

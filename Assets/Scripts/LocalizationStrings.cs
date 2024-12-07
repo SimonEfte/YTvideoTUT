@@ -646,7 +646,6 @@ public class LocalizationStrings : MonoBehaviour
         youGambledText.text = LocalizationStrings.youGambled + (0 + PurchaseLog.amountOfTimesGambled) + LocalizationStrings.times;
 
         youGambledText.font = LiberationEnglish;
-       
 
         lostGamblingText.font = LiberationEnglish; lostGamblingText.text = LocalizationStrings.lostGambling + (0 + PurchaseLog.amountOfTimesGambledLOST) + LocalizationStrings.times;
         wonGamblingText.font = LiberationEnglish; wonGamblingText.text = LocalizationStrings.wonGambling + (0 + PurchaseLog.amountOfTimesGambledWON) + LocalizationStrings.times;
@@ -685,9 +684,6 @@ public class LocalizationStrings : MonoBehaviour
         if (AscendScreen.boughtSale1 == 0) { inflateCheaperStatsTEXT.text = LocalizationStrings.inflateCheaperStats + "0" + cheaper; }
         if (AscendScreen.boughtBagOfCoins1 == 0) { inflateStartWithCoinsStatsTEXT.text = LocalizationStrings.inflateStartWithCoinsStats + "0" + LocalizationStrings.coinsAfterInflating; }
         if (AscendScreen.boughtActiveFlipper1 == 0) { inflateActiveStatsTEXT.text = LocalizationStrings.inflateActiveStats + "0" + LocalizationStrings.moreCoins; }
-
-
-
         #endregion
 
         #region achievements
@@ -1080,7 +1076,7 @@ public class LocalizationStrings : MonoBehaviour
 
         #endregion
 
-        googlePlayText.text = "Also available on Google Play!";
+        googlePlayText.text = "Also available on Mobile!";
         googlePlayText.font = JostHeavyEngAndRuss;
     }
     #endregion
@@ -2000,7 +1996,7 @@ public class LocalizationStrings : MonoBehaviour
 
         #endregion
 
-        googlePlayText.text = "Также доступно на Google Play!";
+        googlePlayText.text = "Также доступно на мобильном телефоне!";
         googlePlayText.font = JostHeavyEngAndRuss;
     }
     #endregion
@@ -2909,7 +2905,7 @@ public class LocalizationStrings : MonoBehaviour
 
         #endregion
 
-        googlePlayText.text = "Google Play!";
+        googlePlayText.text = "";
         googlePlayText.font = notoSansChineseBold;
     }
     #endregion
@@ -3826,7 +3822,7 @@ public class LocalizationStrings : MonoBehaviour
 
         #endregion
 
-        googlePlayText.text = "Google Play!";
+        googlePlayText.text = "";
         googlePlayText.font = nonoSansKoreanBold;
     }
     #endregion
@@ -4752,7 +4748,7 @@ public class LocalizationStrings : MonoBehaviour
 
         #endregion
 
-        googlePlayText.text = "Google Play!";
+        googlePlayText.text = "";
         googlePlayText.font = notoSansJapaneseBold;
     }
     #endregion

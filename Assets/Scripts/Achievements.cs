@@ -216,14 +216,14 @@ public class Achievements : MonoBehaviour
    
     public void CheckACHUnlocked(string achName)
     {
-        //var ach = new Steamworks.Data.Achievement(achName);
-        //if (ach.State == false)
-        //{
-        // ach.Trigger();
-        //   }
+        var ach = new Steamworks.Data.Achievement(achName);
+        if (ach.State == false)
+        {
+         ach.Trigger();
+           }
     }
 
-    /*
+    
    public void UnlockAchievement1(string OneCoin_AC_Test)
    {
        if(GlobalCoins.CoinCount >= 1)
@@ -909,7 +909,7 @@ public class Achievements : MonoBehaviour
            }
        }
    }
-   */
+   
 
     public static int ACH1IsUnlocked = 0;
     public static int ACH2IsUnlocked = 0;

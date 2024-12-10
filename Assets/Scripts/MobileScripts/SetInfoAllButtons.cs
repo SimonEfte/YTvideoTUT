@@ -13,6 +13,7 @@ public class SetInfoAllButtons : MonoBehaviour
     public GameObject setting1, setting2, sound;
 
 
+
     void Start()
     {
         //-2.4 = -197
@@ -29,11 +30,13 @@ public class SetInfoAllButtons : MonoBehaviour
             sound.transform.localPosition = new Vector2(694f, 451f);
             sound.transform.localScale = new Vector2(2.17f, 2.17f);
 
+            languagesBtn.transform.localPosition = new Vector2(-312, 186);
+            languagesBtn.transform.localScale = new Vector2(0.9f, 0.9f);
+
             exitGameBTN.SetActive(false);
             aviableOnPlayBtn.SetActive(false);
             appStoreBtn.SetActive(false);
             outOnMobileText.SetActive(false);
-            languagesBtn.SetActive(false);
             resBtn.SetActive(false);
 
             xpos = -2.4f;

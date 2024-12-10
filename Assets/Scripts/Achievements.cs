@@ -213,703 +213,703 @@ public class Achievements : MonoBehaviour
         if (ACH62IsUnlocked == 1) { lucky1000.SetActive(true); CheckACHUnlocked("getLucky1K"); }
     }
 
-   
     public void CheckACHUnlocked(string achName)
     {
-        var ach = new Steamworks.Data.Achievement(achName);
-        if (ach.State == false)
-        {
-         ach.Trigger();
-           }
+        //var ach = new Steamworks.Data.Achievement(achName);
+        //if (ach.State == false)
+        //{
+        // ach.Trigger();
+        //   }
     }
 
-    
-   public void UnlockAchievement1(string OneCoin_AC_Test)
-   {
-       if(GlobalCoins.CoinCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(OneCoin_AC_Test);
+    /*
 
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
+    public void UnlockAchievement1(string OneCoin_AC_Test)
+    {
+        if(GlobalCoins.CoinCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(OneCoin_AC_Test);
 
-       }
-   }
-   public void UnlockACH2(string ACH2)
-   {
-       if (GlobalCoins.CoinCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ACH2);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH3(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 100)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH4(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 1000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH5(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 10000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH6(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 100000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH7(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 1000000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH8(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 1000000000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH9(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 1000000000000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH10(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 1000000000000000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH11(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 1000000000000000000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH12(string ID)
-   {
-       if (GlobalCoins.CoinCount >= 1000000000000000000000f)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH13(string ID)
-   {
-       if (StatsAll.flippedAmount >= 100)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH14(string ID)
-   {
-       if (StatsAll.flippedAmount >= 1000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH15(string ID)
-   {
-       if (StatsAll.flippedAmount >= 10000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH16(string ID)
-   {
-       if (StatsAll.flippedAmount >= 100000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
 
-   public void UnlockACH17(string ID)
-   {
-       if (GoldenFlipsButton.goldenCoinsUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH18(string ID)
-   {
-       if (GoldenFlipsButton.goldenCoinsUpgradeCount >= 5)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH19(string ID)
-   {
-       if (GoldenFlipsButton.goldenCoinsUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH20(string ID)
-   {
-       if (GoldenFlipsButton.goldenCoinsUpgradeCount >= 21)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH21(string ID)
-   {
-       if (GetLuckyHoverOver.luckyChance >= 2.5f)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH22(string ID)
-   {
-       if (GetLuckyHoverOver.luckyChance >= 5f)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH23(string ID)
-   {
-       if (higherChanceHoverover.headsPercent >= 75 || higherChanceHoverover.tailsPercent >= 75)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH24(string ID)
-   {
+        }
+    }
+    public void UnlockACH2(string ACH2)
+    {
+        if (GlobalCoins.CoinCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ACH2);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH3(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 100)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH4(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 1000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH5(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 10000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH6(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 100000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH7(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 1000000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH8(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 1000000000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH9(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 1000000000000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH10(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 1000000000000000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH11(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 1000000000000000000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH12(string ID)
+    {
+        if (GlobalCoins.CoinCount >= 1000000000000000000000f)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH13(string ID)
+    {
+        if (StatsAll.flippedAmount >= 100)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH14(string ID)
+    {
+        if (StatsAll.flippedAmount >= 1000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH15(string ID)
+    {
+        if (StatsAll.flippedAmount >= 10000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH16(string ID)
+    {
+        if (StatsAll.flippedAmount >= 100000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
 
-       if (Challenges.completedChallenge4 == 1)
-       {
-           if (higherChanceHoverover.headsPercent >= 83.75 || higherChanceHoverover.tailsPercent >= 83.75)
-           {
-               var ach = new Steamworks.Data.Achievement(ID);
-               if (!ach.Trigger())
-               {
-                   ach.Trigger();
-               }
-           }
-       }
-       if (higherChanceHoverover.headsPercent >= 93.75 || higherChanceHoverover.tailsPercent >= 93.75)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH25(string ID)
-   {
-       if (MoreCoinsButton.moreCoinsUpgrades >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH26(string ID)
-   {
-       if (MoreCoinsButton.moreCoinsUpgrades >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
+    public void UnlockACH17(string ID)
+    {
+        if (GoldenFlipsButton.goldenCoinsUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH18(string ID)
+    {
+        if (GoldenFlipsButton.goldenCoinsUpgradeCount >= 5)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH19(string ID)
+    {
+        if (GoldenFlipsButton.goldenCoinsUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH20(string ID)
+    {
+        if (GoldenFlipsButton.goldenCoinsUpgradeCount >= 21)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH21(string ID)
+    {
+        if (GetLuckyHoverOver.luckyChance >= 2.5f)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH22(string ID)
+    {
+        if (GetLuckyHoverOver.luckyChance >= 5f)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH23(string ID)
+    {
+        if (higherChanceHoverover.headsPercent >= 75 || higherChanceHoverover.tailsPercent >= 75)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH24(string ID)
+    {
 
-   public void UnlockACH27(string ID)
-   {
-       if (MoreCoinsButton.greaterCoinsCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH28(string ID)
-   {
-       if (MoreCoinsButton.greaterCoinsCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH29(string ID)
-   {
-       if (KnowledgeUpgrade.knowledgeUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH30(string ID)
-   {
-       if (KnowledgeUpgrade.knowledgeUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH31(string ID)
-   {
-       if (StrongerFist.fistUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH32(string ID)
-   {
-       if (StrongerFist.fistUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH33(string ID)
-   {
-       if (HandInecjtion.injectionUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH34(string ID)
-   {
-       if (HandInecjtion.injectionUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH35(string ID)
-   {
-       if (BrainPower.brainPowerUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH36(string ID)
-   {
-       if (BrainPower.brainPowerUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
+        if (Challenges.completedChallenge4 == 1)
+        {
+            if (higherChanceHoverover.headsPercent >= 83.75 || higherChanceHoverover.tailsPercent >= 83.75)
+            {
+                var ach = new Steamworks.Data.Achievement(ID);
+                if (!ach.Trigger())
+                {
+                    ach.Trigger();
+                }
+            }
+        }
+        if (higherChanceHoverover.headsPercent >= 93.75 || higherChanceHoverover.tailsPercent >= 93.75)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH25(string ID)
+    {
+        if (MoreCoinsButton.moreCoinsUpgrades >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH26(string ID)
+    {
+        if (MoreCoinsButton.moreCoinsUpgrades >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
 
-   public void UnlockACH37(string ID)
-   {
-       if (ExplosiveFlips.explosiveUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH38(string ID)
-   {
-       if (ExplosiveFlips.explosiveUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH39(string ID)
-   {
-       if (HydrationButton.hydrationUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH40(string ID)
-   {
-       if (HydrationButton.hydrationUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH41(string ID)
-   {
-       if (StrangePotion.potionUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH42(string ID)
-   {
-       if (StrangePotion.potionUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH43(string ID)
-   {
-       if (MasterFlipper.MasterFlipsUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH44(string ID)
-   {
-       if (MasterFlipper.MasterFlipsUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH45(string ID)
-   {
-       if (HandShake.handShakeUpgradeCount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH46(string ID)
-   {
-       if (HandShake.handShakeUpgradeCount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH47(string ID)
-   {
-       if (StatsAll.luckyCoinsAmount >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH48(string ID)
-   {
-       if (StatsAll.luckyCoinsAmount >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH49(string ID)
-   {
-       if (StatsAll.luckyCoinsAmount >= 100)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH50(string ID)
-   {
-       if (MainButtonClick.numberOfDuplicationUpgrades >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH51(string ID)
-   {
-       if (MainButtonClick.numberOfDuplicationUpgrades >= 4)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH52(string ID)
-   {
-       if (MainButtonClick.numberOfDuplicationUpgrades >= 9)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH53(string ID)
-   {
-       if (MainButtonClick.numberOfDuplicationUpgrades >= 20)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH54(string ID)
-   {
-       if (Upgrade12.upgrade12Count >= 1)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockACH55(string ID)
-   {
-       if (Upgrade12.upgrade12Count >= 10)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockAchievement56(string ID)
-   {
-       if (StatsAll.flippedAmount >= 1000000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
+    public void UnlockACH27(string ID)
+    {
+        if (MoreCoinsButton.greaterCoinsCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH28(string ID)
+    {
+        if (MoreCoinsButton.greaterCoinsCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH29(string ID)
+    {
+        if (KnowledgeUpgrade.knowledgeUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH30(string ID)
+    {
+        if (KnowledgeUpgrade.knowledgeUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH31(string ID)
+    {
+        if (StrongerFist.fistUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH32(string ID)
+    {
+        if (StrongerFist.fistUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH33(string ID)
+    {
+        if (HandInecjtion.injectionUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH34(string ID)
+    {
+        if (HandInecjtion.injectionUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH35(string ID)
+    {
+        if (BrainPower.brainPowerUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH36(string ID)
+    {
+        if (BrainPower.brainPowerUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
 
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
+    public void UnlockACH37(string ID)
+    {
+        if (ExplosiveFlips.explosiveUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH38(string ID)
+    {
+        if (ExplosiveFlips.explosiveUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH39(string ID)
+    {
+        if (HydrationButton.hydrationUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH40(string ID)
+    {
+        if (HydrationButton.hydrationUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH41(string ID)
+    {
+        if (StrangePotion.potionUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH42(string ID)
+    {
+        if (StrangePotion.potionUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH43(string ID)
+    {
+        if (MasterFlipper.MasterFlipsUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH44(string ID)
+    {
+        if (MasterFlipper.MasterFlipsUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH45(string ID)
+    {
+        if (HandShake.handShakeUpgradeCount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH46(string ID)
+    {
+        if (HandShake.handShakeUpgradeCount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH47(string ID)
+    {
+        if (StatsAll.luckyCoinsAmount >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH48(string ID)
+    {
+        if (StatsAll.luckyCoinsAmount >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH49(string ID)
+    {
+        if (StatsAll.luckyCoinsAmount >= 100)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH50(string ID)
+    {
+        if (MainButtonClick.numberOfDuplicationUpgrades >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH51(string ID)
+    {
+        if (MainButtonClick.numberOfDuplicationUpgrades >= 4)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH52(string ID)
+    {
+        if (MainButtonClick.numberOfDuplicationUpgrades >= 9)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH53(string ID)
+    {
+        if (MainButtonClick.numberOfDuplicationUpgrades >= 20)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH54(string ID)
+    {
+        if (Upgrade12.upgrade12Count >= 1)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockACH55(string ID)
+    {
+        if (Upgrade12.upgrade12Count >= 10)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockAchievement56(string ID)
+    {
+        if (StatsAll.flippedAmount >= 1000000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
 
-       }
-   }
-   public void UnlockAchievement57(string ID)
-   {
-       if (StatsAll.luckyCoinsAmount >= 1000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
 
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
+        }
+    }
+    public void UnlockAchievement57(string ID)
+    {
+        if (StatsAll.luckyCoinsAmount >= 1000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
 
-       }
-   }
-   public void UnlockAchievement58(string ID)
-   {
-       if (StatsAll.headsFlippedAmount >= 100000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
 
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
+        }
+    }
+    public void UnlockAchievement58(string ID)
+    {
+        if (StatsAll.headsFlippedAmount >= 100000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
 
-       }
-   }
-   public void UnlockAchievement59(string ID)
-   {
-       if (StatsAll.tailsFlippedAmount >= 100000)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
 
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   public void UnlockAchievement60(string ID)
-   {
-       if (GlobalCoinMaker.coinsPerFlipUpgrades == 21)
-       {
-           var ach = new Steamworks.Data.Achievement(ID);
+        }
+    }
+    public void UnlockAchievement59(string ID)
+    {
+        if (StatsAll.tailsFlippedAmount >= 100000)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
 
-           if (!ach.Trigger())
-           {
-               ach.Trigger();
-           }
-       }
-   }
-   
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    public void UnlockAchievement60(string ID)
+    {
+        if (GlobalCoinMaker.coinsPerFlipUpgrades == 21)
+        {
+            var ach = new Steamworks.Data.Achievement(ID);
+
+            if (!ach.Trigger())
+            {
+                ach.Trigger();
+            }
+        }
+    }
+    */
 
     public static int ACH1IsUnlocked = 0;
     public static int ACH2IsUnlocked = 0;

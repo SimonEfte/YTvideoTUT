@@ -124,8 +124,8 @@ public class Tabs : MonoBehaviour
             Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
             //Screen.SetResolution(1920, 1080, FullScreenMode.ExclusiveFullScreen);
 
-            musicFrame.transform.localPosition = new Vector2(0, 295);
-            audioFrame.transform.localPosition = new Vector2(0, 80);
+            musicFrame.transform.localPosition = new Vector2(132, 295);
+            audioFrame.transform.localPosition = new Vector2(132, 80);
 
             saveGameBtn.transform.localPosition = new Vector2(0,-124);
             saveGameBtn.transform.localScale = new Vector2(1.2f, 1.2f);

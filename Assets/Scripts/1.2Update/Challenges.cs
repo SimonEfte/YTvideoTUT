@@ -361,12 +361,12 @@ public class Challenges : MonoBehaviour
 
             if(openedChallNumber == selectedChall)
             {
-                choseOrNotChoseText.text = "UNSELECT";
+                choseOrNotChoseText.text = LocalizationStrings.challengesUnselect;
                 choseOrNotChoseText.fontSize = 38.5f;
             }
             else
             {
-                choseOrNotChoseText.text = "SELECT";
+                choseOrNotChoseText.text = LocalizationStrings.challengesSelect;
                 choseOrNotChoseText.fontSize = 52f;
             }
         }
@@ -439,7 +439,7 @@ public class Challenges : MonoBehaviour
 
         if(active == false)
         {
-            choseOrNotChoseText.text = "UNSELECT";
+            choseOrNotChoseText.text = LocalizationStrings.challengesUnselect;
             choseOrNotChoseText.fontSize = 38.5f;
             choseChall = true;
 
@@ -451,7 +451,7 @@ public class Challenges : MonoBehaviour
         else
         {
             selectedChall = 0;
-            choseOrNotChoseText.text = "SELECT";
+            choseOrNotChoseText.text = LocalizationStrings.challengesSelect;
             choseOrNotChoseText.fontSize = 52f;
             choseChall = false;
         }

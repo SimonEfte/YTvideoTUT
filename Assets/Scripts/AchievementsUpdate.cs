@@ -165,14 +165,15 @@ public class AchievementsUpdate : MonoBehaviour
 
     public void CheckACHUnlocked(string achName)
     {
-         var ach = new Steamworks.Data.Achievement(achName);
-
-         if (ach.State == false)
-         {
-         ach.Trigger();
-         }
+         //var ach = new Steamworks.Data.Achievement(achName);
+         //
+         //if (ach.State == false)
+         //{
+         //ach.Trigger();
+         //}
     }
 
+   /*
     
     public void UnlockAchievement1(string ID)
     {
@@ -598,7 +599,7 @@ public class AchievementsUpdate : MonoBehaviour
 
         }
     }
-   
+   */
 
     public void Update()
     {

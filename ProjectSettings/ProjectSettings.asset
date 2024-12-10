@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: "Simon Eftest\xF8l"
+  companyName: EagleEye Games
   productName: Coin Flipper
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}

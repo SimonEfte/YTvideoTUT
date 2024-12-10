@@ -132,27 +132,21 @@ public class LocalizationStrings : MonoBehaviour
 
     public static int changeFont;
 
+
     public void Start()
     {
-        if(LoadSaves.isMobileBuild == false)
+        if (!PlayerPrefs.HasKey("ChosenText"))
         {
-            if (!PlayerPrefs.HasKey("ChosenText"))
-            {
-                English();
-            }
-            else
-            {
-                ChooseText = PlayerPrefs.GetInt("ChosenText");
-                if (ChooseText == 1) { English(); }
-                if (ChooseText == 2) { Russian(); }
-                if (ChooseText == 3) { Chinese(); }
-                if (ChooseText == 4) { Korean(); }
-                if (ChooseText == 5) { Japanese(); }
-            }
+            English();
         }
         else
         {
-            English();
+            ChooseText = PlayerPrefs.GetInt("ChosenText");
+            if (ChooseText == 1) { English(); }
+            if (ChooseText == 2) { Russian(); }
+            if (ChooseText == 3) { Chinese(); }
+            if (ChooseText == 4) { Korean(); }
+            if (ChooseText == 5) { Japanese(); }
         }
     }
 
@@ -1078,6 +1072,8 @@ public class LocalizationStrings : MonoBehaviour
 
         googlePlayText.text = "Also available on Mobile!";
         googlePlayText.font = JostHeavyEngAndRuss;
+
+        if (LoadSaves.isMobileBuild == true) { SetMobileTexts(); }
     }
     #endregion
 
@@ -1998,6 +1994,8 @@ public class LocalizationStrings : MonoBehaviour
 
         googlePlayText.text = "Также доступно на мобильном телефоне!";
         googlePlayText.font = JostHeavyEngAndRuss;
+
+        if (LoadSaves.isMobileBuild == true) { SetMobileTexts(); }
     }
     #endregion
 
@@ -2907,6 +2905,8 @@ public class LocalizationStrings : MonoBehaviour
 
         googlePlayText.text = "";
         googlePlayText.font = notoSansChineseBold;
+
+        if (LoadSaves.isMobileBuild == true) { SetMobileTexts(); }
     }
     #endregion
 
@@ -3824,6 +3824,8 @@ public class LocalizationStrings : MonoBehaviour
 
         googlePlayText.text = "";
         googlePlayText.font = nonoSansKoreanBold;
+
+        if (LoadSaves.isMobileBuild == true) { SetMobileTexts(); }
     }
     #endregion
 
@@ -4752,6 +4754,121 @@ public class LocalizationStrings : MonoBehaviour
         googlePlayText.font = notoSansJapaneseBold;
     }
     #endregion
+
+
+
+    public TextMeshProUGUI upgradeClose, pileClose, achievementClose, closeAutoUpgradeFrame, inflateClose, inlfateUpgradeClose, inflateInfoClose, challengesInfoClose, challengesClose;
+    public TextMeshProUGUI pileCollectText, inflateView, inflateUpgradePurchase;
+    public static string challengesSelect, challengesUnselect;
+    public TextMeshProUGUI challengesSelectUnbselectText;
+
+    public void SetMobileTexts()
+    {
+        if (ChooseText == 1) 
+        {
+            challengesSelect = "SELECT";
+            challengesUnselect = "UNSELECT";
+            challengesSelectUnbselectText.font = JostHeavyEngAndRuss;
+
+            upgradeClose.text = "CLOSE"; upgradeClose.font = JostHeavyEngAndRuss;
+            pileClose.text = "CLOSE"; pileClose.font = JostHeavyEngAndRuss;
+            achievementClose.text = "CLOSE"; achievementClose.font = JostHeavyEngAndRuss;
+            closeAutoUpgradeFrame.text = "CLOSE"; closeAutoUpgradeFrame.font = JostHeavyEngAndRuss;
+            inflateClose.text = "CLOSE"; inflateClose.font = JostHeavyEngAndRuss;
+            inlfateUpgradeClose.text = "CLOSE"; inlfateUpgradeClose.font = JostHeavyEngAndRuss;
+            inflateInfoClose.text = "CLOSE"; inflateInfoClose.font = JostHeavyEngAndRuss;
+            challengesInfoClose.text = "CLOSE"; challengesInfoClose.font = JostHeavyEngAndRuss;
+            challengesClose.text = "CLOSE"; challengesClose.font = JostHeavyEngAndRuss;
+
+            pileCollectText.text = "COLLECT"; pileCollectText.font = JostHeavyEngAndRuss;
+            inflateView.text = "VIEW"; inflateView.font = JostHeavyEngAndRuss;
+            inflateUpgradePurchase.text = "PURCHASE"; inflateUpgradePurchase.font = JostHeavyEngAndRuss;
+        }
+        if (ChooseText == 2) 
+        {
+            //RUSSIAN
+            challengesSelect = "<size=40>ВЫБРАТЬ";
+            challengesUnselect = "<size=27>СНЯТЬ ВЫБОР";
+            challengesSelectUnbselectText.font = JostHeavyEngAndRuss;
+
+            upgradeClose.text = "<size=11>ЗАКРЫТЬ"; upgradeClose.font = JostHeavyEngAndRuss;
+            pileClose.text = "<size=34>ЗАКРЫТЬ"; pileClose.font = JostHeavyEngAndRuss;
+            achievementClose.text = "<size=6>ЗАКРЫТЬ"; achievementClose.font = JostHeavyEngAndRuss;
+            closeAutoUpgradeFrame.text = "<size=9>ЗАКРЫТЬ"; closeAutoUpgradeFrame.font = JostHeavyEngAndRuss;
+            inflateClose.text = "<size=25>ЗАКРЫТЬ"; inflateClose.font = JostHeavyEngAndRuss;
+            inlfateUpgradeClose.text = "<size=34>ЗАКРЫТЬ"; inlfateUpgradeClose.font = JostHeavyEngAndRuss;
+            inflateInfoClose.text = "<size=25>ЗАКРЫТЬ"; inflateInfoClose.font = JostHeavyEngAndRuss;
+            challengesInfoClose.text = "<size=32>ЗАКРЫТЬ"; challengesInfoClose.font = JostHeavyEngAndRuss;
+            challengesClose.text = "<size=40>ЗАКРЫТЬ"; challengesClose.font = JostHeavyEngAndRuss;
+
+            pileCollectText.text = "СОБРАТЬ"; pileCollectText.font = JostHeavyEngAndRuss;
+            inflateView.text = "<size=23>ПРОСМОТР"; inflateView.font = JostHeavyEngAndRuss;
+            inflateUpgradePurchase.text = "ПОКУПКА"; inflateUpgradePurchase.font = JostHeavyEngAndRuss;
+        }
+        if (ChooseText == 3)
+        {
+            //Chinese
+            challengesSelect = "选择";
+            challengesUnselect = "离开";
+            challengesSelectUnbselectText.font = notoSansChineseBold;
+
+            upgradeClose.text = "关闭"; upgradeClose.font = notoSansChineseBold;
+            pileClose.text = "关闭"; pileClose.font = notoSansChineseBold;
+            achievementClose.text = "关闭"; achievementClose.font = notoSansChineseBold;
+            closeAutoUpgradeFrame.text = "关闭"; closeAutoUpgradeFrame.font = notoSansChineseBold;
+            inflateClose.text = "关闭"; inflateClose.font = notoSansChineseBold;
+            inlfateUpgradeClose.text = "关闭"; inlfateUpgradeClose.font = notoSansChineseBold;
+            inflateInfoClose.text = "关闭"; inflateInfoClose.font = notoSansChineseBold;
+            challengesInfoClose.text = "关闭"; challengesInfoClose.font = notoSansChineseBold;
+            challengesClose.text = "关闭"; challengesClose.font = notoSansChineseBold;
+
+            pileCollectText.text = "收集"; pileCollectText.font = notoSansChineseBold;
+            inflateView.text = "查看"; inflateView.font = notoSansChineseBold;
+            inflateUpgradePurchase.text = "购买"; inflateUpgradePurchase.font = notoSansChineseBold;
+        }
+        if (ChooseText == 4) 
+        {
+            //Korean
+            challengesSelect = "선택";
+            challengesUnselect = "선택 해제";
+            challengesSelectUnbselectText.font = nonoSansKoreanBold;
+
+            upgradeClose.text = "떠나다"; upgradeClose.font = nonoSansKoreanBold;
+            pileClose.text = "떠나다"; pileClose.font = nonoSansKoreanBold;
+            achievementClose.text = "떠나다"; achievementClose.font = nonoSansKoreanBold;
+            closeAutoUpgradeFrame.text = "떠나다"; closeAutoUpgradeFrame.font = nonoSansKoreanBold;
+            inflateClose.text = "떠나다"; inflateClose.font = nonoSansKoreanBold;
+            inlfateUpgradeClose.text = "떠나다"; inlfateUpgradeClose.font = nonoSansKoreanBold;
+            inflateInfoClose.text = "떠나다"; inflateInfoClose.font = nonoSansKoreanBold;
+            challengesInfoClose.text = "떠나다"; challengesInfoClose.font = nonoSansKoreanBold;
+            challengesClose.text = "떠나다"; challengesClose.font = nonoSansKoreanBold;
+
+            pileCollectText.text = "수집"; pileCollectText.font = nonoSansKoreanBold;
+            inflateView.text = "보기"; inflateView.font = nonoSansKoreanBold;
+            inflateUpgradePurchase.text = "구매"; inflateUpgradePurchase.font = nonoSansKoreanBold;
+        }
+        if (ChooseText == 5) 
+        {
+            //Japanese
+            challengesSelect = "選択";
+            challengesUnselect = "選択解除";
+            challengesSelectUnbselectText.font = notoSansJapaneseBold;
+
+            upgradeClose.text = "閉じる"; upgradeClose.font = notoSansJapaneseBold;
+            pileClose.text = "閉じる"; pileClose.font = notoSansJapaneseBold;
+            achievementClose.text = "閉じる"; achievementClose.font = notoSansJapaneseBold;
+            closeAutoUpgradeFrame.text = "閉じる"; closeAutoUpgradeFrame.font = notoSansJapaneseBold;
+            inflateClose.text = "閉じる"; inflateClose.font = notoSansJapaneseBold;
+            inlfateUpgradeClose.text = "閉じる"; inlfateUpgradeClose.font = notoSansJapaneseBold;
+            inflateInfoClose.text = "閉じる"; inflateInfoClose.font = notoSansJapaneseBold;
+            challengesInfoClose.text = "閉じる"; challengesInfoClose.font = notoSansJapaneseBold;
+            challengesClose.text = "閉じる"; challengesClose.font = notoSansJapaneseBold;
+
+            pileCollectText.text = "集める"; pileCollectText.font = notoSansJapaneseBold;
+            inflateView.text = "表示"; inflateView.font = notoSansJapaneseBold;
+            inflateUpgradePurchase.text = "購入"; inflateUpgradePurchase.font = notoSansJapaneseBold;
+        }
+    }
 
     public static string FormatCoins(float coins)
     {
